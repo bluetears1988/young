@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title>young</title>
+		<!--<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" type="text/css"/>-->
+    	<!--<link rel="stylesheet" href="animations.css" type="text/css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+    	<!--<script src="touch.js"></script>-->
+		<style type="text/css">
+
+		</style>
+		<script type="text/javascript">
+			var winW=document.documentElement.clientWidth;
+	        var desW=750;
+	        var fontSize=100;
+	        var rem=desW/fontSize;
+	        if(winW>desW){
+	            winW=desW;
+	        }
+	        document.documentElement.style.fontSize = winW/rem+"px";
+		</script>
+	</head>
+	<body>
+		<div class="storys_bg_imgs">
+			<img src="images/story1.jpg" class="story_bg showIn" id="s_img_1"/>
+			<img src="images/story2.jpg" class="story_bg showIn" id="s_img_2"/>
+			<img src="images/story3.jpg" class="story_bg showIn" id="s_img_3"/>
+			<img src="images/story4.jpg" class="story_bg showIn" id="s_img_4"/>
+			<img src="images/story5.jpg" class="story_bg showIn" id="s_img_5"/>
+			<img src="images/story6.jpg" class="story_bg showIn" id="s_img_6"/>
+		</div>
+		<div class="shadow" style="opacity: 0;"></div>
+		<div class="question_s" style="display: none;">
+			<div class="question w25 fall group-1-f">
+				<span class="f26 blurZoom group-1-bz">你还在减肥吗？</span>
+				<span class="f26 q_opcity23 blurZoom group-1-bz">你满意现在的工作吗？</span>
+			</div>
+			<div class="question w57 l42 fall group-2-f">
+				<span class="f26 blurZoom group-2-bz">你的身体被掏空了吗？</span>
+				<span class="f51 blurZoom group-2-bz">你还<span class="white_block"><strong>租房</strong></span>住吗？</span>
+				<span class="f51 blurZoom group-2-bz">你怎么还没结婚？</span>
+			</div>
+			<div class="question w38 l110 fall group-3-f">
+				<span class="f38 blurZoom group-3-bz">多久没给爸妈打电话了？</span>
+				<span class="f35 q_opcity35 blurZoom group-3-bz">你累吗？</span>
+				<span class="f30 blurZoom group-3-bz">你的身体被掏空了吗？</span>
+			</div>
+			<div class="question w25 l117 fall group-4-f"><span class="f26 q_opcity23 blurZoom group-4-bz">你满意现在的工作吗？</span></div>
+			<div class="question w25 l157 fall group-5-f"><span class="q_opcity41 f26 blurZoom group-5-bz">你记得自己的梦想吗？</span></div>
+			<div class="question w71 l192 fall group-6-f">
+				<span class="f48 blurZoom group-6-bz">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+				<span class="f47 blurZoom group-6-bz">你有<span class="white_block">梦想</span>吗？</span>
+				<span class="f55 blurZoom group-6-bz">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+			</div>
+			<div class="question w35 l263 fall group-7-f">
+				<span class="f24 blurZoom group-7-bz">你记得自己的梦想吗？</span>
+				<span class="f41 blurZoom group-7-bz">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+				<span class="f35 blurZoom group-7-bz">你有喜欢的人吗？</span>
+			</div>
+			<div class="question w25 l340 fall group-8-f"><span class="f26 blurZoom group-8-bz">你为什么选择<span class="white_block">北漂</span>？</span></div>
+			<div class="question w60 l318 fall group-9-f">
+				<span class="f48 blurZoom group-9-bz">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+				<span class="f26 blurZoom group-9-bz">你单身吗？</span>
+				<span class="f26 q_opcity35 blurZoom group-9-bz">你有梦想吗？</span>
+			</div>
+			<div class="question w57 l375 fall group-10-f">
+				<span class="f35 q_opcity35 blurZoom group-10-bz">你记得自己的梦想吗？</span>
+				<span class="f35 blurZoom group-10-bz">你缺钱吗？</span>
+				<span class="f49 blurZoom group-10-bz">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+			</div>
+			<div class="question w52 l442 fall group-11-f">
+				<span class="f32 blurZoom group-11-bz">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+				<span class="f33 q_opcity35 blurZoom group-11-bz">你对未来担心吗？</span>
+				<span class="f47 blurZoom group-11-bz" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+			</div>
+		</div>
+		<div class="story_1" id="story_1">
+			<div class="screen2">
+				<div class="fadeOut">
+					<div class="logo logo_shIn showIn"></div>
+					<div class="textCtn">
+						<div class="text_01 bounceInDown text_01bInD"></div>
+						<div class="text_02 text_02_shIn showIn"></div>
+					</div>
+				</div>
+				<div class="sign f40 slipInleft sign_slInLeft">
+					<div class="fadeOut" style="display: inline-block;">————</div> 
+					<span class="Horizontal shift" style="display: inline-block;"> 年轻</span>
+					<span class="Horizontal shift_2" style="display: inline-block;">人</span>
+					<span class="Horizontal shift_3" style="display: inline-block;">这么</span>
+					<span class="Horizontal fadeOut" style="display: inline-block;">说！</span> 
+				</div>
+			</div>
+			<div class="screen3 screen3_shIn showIn color_w" id="screen_3">
+				<div class="question_s">
+					<div class="question w49 l33 fall_3_other_13 group-f-3 srceen3" id="aa">
+						<span class="f35 q_opcity40">你有梦想吗？</span>
+						<span class="f43">你缺钱吗？</span>
+						<span class="f25 q_opcity46">你还相信爱情吗？</span>
+						<span class="f37">你累吗？</span>
+					</div>
+					<div class="question w45 l132 fall_3_other_2 group-f-3_other srceen3">
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_3 group-f-3_other srceen3">
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_4 group-f-3_other srceen3">
+						<span class="f29">你缺钱吗？</span>
+						<span class="f34">你有不能说的秘密吗？</span>
+					</div>
+					<div class="question w28 l294 fall_3_other_5 group-f-3_other srceen3">
+						<span class="f27 q_opcity25">你创业了吗？</span>
+					</div>
+					<div class="question w37 l294 fall_3_other_7 group-f-3_other srceen3">
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w37 l338 fall_3_other_8 group-f-3_other srceen3">
+						<span class="f36">你是空巢青年吗？</span>
+						<span class="f25">你孤独吗？</span>
+					</div>
+					<div class="question w42 l375 fall_3_other_9 group-f-3_other srceen3">
+						<span class="f43">世界这么大，你看过吗？</span>
+					</div>
+					<div class="question w41 l95 fall_3_other group-f-3 srceen3">
+						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w34 l160 fall_3_other group-f-3 srceen3">
+						<span class="f26 q_opcity74">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+					</div>
+					<div class="question w36 l294 fall_3_other_6 group-f-3 srceen3">
+						<span class="f36">你单身吗？</span>
+					</div>
+					<div class="question w23 l284 fall_3_other group-f-3 srceen3">
+						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					</div>
+					<div class="question w35 l334 fall_3_other group-f-3 srceen3">
+						<span class="f35">你还租房吗？</span>
+						<span class="f35 q_opcity53">你孤独吗？</span>
+					</div>
+					
+					<div class="question w35 l378 fall_3_other_10 group-f-3 srceen3">
+						<span class="f37">你有梦想吗？</span>
+					</div>
+					<div class="question w26 l428 fall_3_other_11 group-f-3 srceen3">
+						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					</div>
+					<div class="question w49 l428 fall_3_other_12 group-f-3 srceen3">
+						<span class="f49">你缺钱吗？</span>
+					</div>
+					<div class="question w77 fall_3 group-f-3 srceen3 mid" id="keyword_1">
+						<span class="f52">你为什么选择<span class="white_block">北漂</span>？</span>
+					</div>
+					<div class="contain contain_shIn showIn srceen3_tab">
+						<div class="dot" id="dot_1"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="screen4">
+				<div class="story">
+					<div class="story_title f32"><strong>周志强，保安/表演系学生</strong></div>
+					<p class="story_text f25 mt22">晚上在北京电影学院做夜班保安，白天则是北影2014级表演专科班学生。</p> 
+					<p class="story_text f25">周志强曾做过仓管、后厨、司机、工厂操作员，但他都不喜欢。2013年，他带着身上仅有的500块钱，坐了20多个小时火车来到北京。</p>
+					<div class="story_tab_contain showIn story_tab" id="s_tab_1">
+						<div class="dot" id="dot_2"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="screen5" id="screen5">
+				<div class="">
+					<div class="textCtn_2">
+						<div class="text_01_2" id="text_01_2"></div>
+						<div class="text_02_2" id="text_02_2"></div>
+						<div class="text_03_2" id="text_03_2"></div>
+					</div>
+				</div>
+				<div class="end_btn showIn" id="btn_1">
+					<div class="end_btn_in f32">
+						下一个故事
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="story_2">
+			<div class="showIn color_w" id="story_2_screen3">
+				<div class="question_s">
+					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
+						<span class="f35 q_opcity40">你有梦想吗？</span>
+						<span class="f43">你缺钱吗？</span>
+						<span class="f25 q_opcity46">你还相信爱情吗？</span>
+						<span class="f37">你累吗？</span>
+					</div>
+					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
+						<span class="f29">你缺钱吗？</span>
+						<span class="f34">你有不能说的秘密吗？</span>
+					</div>
+					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
+						<span class="f27 q_opcity25">你创业了吗？</span>
+					</div>
+					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
+						<span class="f36">你是空巢青年吗？</span>
+						<span class="f25">你孤独吗？</span>
+					</div>
+					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
+						<span class="f43">世界这么大，你看过吗？</span>
+					</div>
+					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
+						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
+						<span class="f26 q_opcity74">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+					</div>
+					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
+						<span class="f36">你单身吗？</span>
+					</div>
+					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
+						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					</div>
+					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
+						<span class="f35">你还租房吗？</span>
+						<span class="f35 q_opcity53">你孤独吗？</span>
+					</div>
+					
+					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
+						<span class="f37">你有梦想吗？</span>
+					</div>
+					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
+						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					</div>
+					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
+						<span class="f49">你缺钱吗？</span>
+					</div>
+					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_2">
+						<span class="f52">你有<span class="white_block">梦想</span>吗？</span>
+					</div>
+					<div class="contain contain_shIn showIn delay_2_1">
+						<div class="dot" id="dot_3"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="screen4">
+				<div class="story">
+					<div class="story_title f32"><strong>惠子  女主播</strong></div>
+					<p class="story_text f25 mt22">没有任何粉丝基础的惠子，在万圣节前夕把自己打扮成僵尸的模样，来到三里屯街头进行直播。这一举动成功吸引了超过百万人次的线上围观，</p> 
+					<div class="story_tab_contain showIn story_tab" id="s_tab_2">
+						<div class="dot" id="dot_4"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="story_2_screen5" id="story_2_screen5">
+				<div class="">
+					<div class="s2_textCtn_2">
+						<div class="s2_text_01_2" id="s2_text_01_2"></div>
+						<div class="s2_text_02_2" id="s2_text_02_2"></div>
+					</div>
+				</div>
+				<div class="end_btn showIn" id="btn_2">
+					<div class="end_btn_in f32">
+						下一个故事
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="story_3">
+			<div class="showIn color_w" id="story_3_screen3">
+				<div class="question_s">
+					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
+						<span class="f35 q_opcity40">你有梦想吗？</span>
+						<span class="f43">你缺钱吗？</span>
+						<span class="f25 q_opcity46">你还相信爱情吗？</span>
+						<span class="f37">你累吗？</span>
+					</div>
+					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
+						<span class="f29">你缺钱吗？</span>
+						<span class="f34">你有不能说的秘密吗？</span>
+					</div>
+					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
+						<span class="f27 q_opcity25">你创业了吗？</span>
+					</div>
+					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
+						<span class="f36">你是空巢青年吗？</span>
+						<span class="f25">你孤独吗？</span>
+					</div>
+					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
+						<span class="f43">世界这么大，你看过吗？</span>
+					</div>
+					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
+						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
+						<span class="f26 q_opcity74">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+					</div>
+					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
+						<span class="f36">你单身吗？</span>
+					</div>
+					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
+						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					</div>
+					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
+						<span class="f35">你还租房吗？</span>
+						<span class="f35 q_opcity53">你孤独吗？</span>
+					</div>
+					
+					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
+						<span class="f37">你有梦想吗？</span>
+					</div>
+					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
+						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					</div>
+					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
+						<span class="f49">你缺钱吗？</span>
+					</div>
+					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_3">
+						<span class="f52">你的努力有<span class="white_block">回报</span>吗？</span>
+					</div>
+					<div class="contain contain_shIn showIn delay_2_1">
+						<div class="dot" id="dot_5"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="screen4">
+				<div class="story">
+					<div class="story_title f32"><strong>陆海荣  舞蛹学员</strong></div>
+					<p class="story_text f25 mt22">卢海荣独自远赴日本生活了16年，只为等待一个学习歌舞伎的机会。歌舞伎对学员有严格要求，必须是23岁以下的日本男性，卢海荣没有资格。比起放弃，他选择了一场看不到尽头的等待。</p> 
+					<div class="story_tab_contain showIn story_tab" id="s_tab_3">
+						<div class="dot" id="dot_6"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="story_3_screen5" id="story_3_screen5">
+				<div class="">
+					<div class="s3_textCtn_2">
+						<div class="s3_text_01_2" id="s3_text_01_2"></div>
+					</div>
+				</div>
+				<div class="end_btn showIn" id="btn_3">
+					<div class="end_btn_in f32">
+						下一个故事
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="story_4">
+			<div class="showIn color_w" id="story_4_screen3">
+				<div class="question_s">
+					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
+						<span class="f35 q_opcity40">你有梦想吗？</span>
+						<span class="f43">你缺钱吗？</span>
+						<span class="f25 q_opcity46">你还相信爱情吗？</span>
+						<span class="f37">你累吗？</span>
+					</div>
+					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
+						<span class="f29">你缺钱吗？</span>
+						<span class="f34">你有不能说的秘密吗？</span>
+					</div>
+					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
+						<span class="f27 q_opcity25">你创业了吗？</span>
+					</div>
+					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
+						<span class="f36">你是空巢青年吗？</span>
+						<span class="f25">你孤独吗？</span>
+					</div>
+					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
+						<span class="f43">世界这么大，你看过吗？</span>
+					</div>
+					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
+						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
+						<span class="f26 q_opcity74">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+					</div>
+					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
+						<span class="f36">你单身吗？</span>
+					</div>
+					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
+						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					</div>
+					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
+						<span class="f35">你还租房吗？</span>
+						<span class="f35 q_opcity53">你孤独吗？</span>
+					</div>
+					
+					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
+						<span class="f37">你有梦想吗？</span>
+					</div>
+					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
+						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					</div>
+					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
+						<span class="f49">你缺钱吗？</span>
+					</div>
+					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_4">
+						<span class="f52">你今天准时<span class="white_block">打卡</span>了吗？</span>
+					</div>
+					<div class="contain contain_shIn showIn delay_2_1">
+						<div class="dot" id="dot_7"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="screen4">
+				<div class="story">
+					<div class="story_title f32"><strong>张健  陶匠</strong></div>
+					<p class="story_text f25 mt22">从中央美术学院毕业后，张建便离开北京，扎根景德镇，一心研究柴烧这种古老的制陶技艺。在景德镇，像张建这样的“景漂”青年约有两万人。</p> 
+					<div class="story_tab_contain showIn story_tab" id="s_tab_4">
+						<div class="dot" id="dot_8"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="story_4_screen5" id="story_4_screen5">
+				<div class="">
+					<div class="s4_textCtn_2">
+						<div class="s4_text_01_2" id="s4_text_01_2"></div>
+						<div class="s4_text_02_2" id="s4_text_02_2"></div>
+					</div>
+				</div>
+				<div class="end_btn showIn" id="btn_4">
+					<div class="end_btn_in f32">
+						下一个故事
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="story_5">
+			<div class="showIn color_w" id="story_5_screen3">
+				<div class="question_s">
+					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
+						<span class="f35 q_opcity40">你有梦想吗？</span>
+						<span class="f43">你缺钱吗？</span>
+						<span class="f25 q_opcity46">你还相信爱情吗？</span>
+						<span class="f37">你累吗？</span>
+					</div>
+					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
+						<span class="f29">你缺钱吗？</span>
+						<span class="f34">你有不能说的秘密吗？</span>
+					</div>
+					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
+						<span class="f27 q_opcity25">你创业了吗？</span>
+					</div>
+					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
+						<span class="f36">你是空巢青年吗？</span>
+						<span class="f25">你孤独吗？</span>
+					</div>
+					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
+						<span class="f43">世界这么大，你看过吗？</span>
+					</div>
+					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
+						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
+						<span class="f26 q_opcity74">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+					</div>
+					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
+						<span class="f36">你单身吗？</span>
+					</div>
+					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
+						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					</div>
+					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
+						<span class="f35">你还租房吗？</span>
+						<span class="f35 q_opcity53">你孤独吗？</span>
+					</div>
+					
+					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
+						<span class="f37">你有梦想吗？</span>
+					</div>
+					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
+						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					</div>
+					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
+						<span class="f49">你缺钱吗？</span>
+					</div>
+					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_5">
+						<span class="f52">你<span class="white_block">压力</span>大吗？</span>
+					</div>
+					<div class="contain contain_shIn showIn delay_2_1">
+						<div class="dot" id="dot_9"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="screen4">
+				<div class="story" id="story_6_screen3">
+					<div class="story_title f32 w537" id="story_title_6"><strong>毛娅绮 退役冠军/体育公司CEO</strong></div>
+					<p class="story_text f25 mt22">毛娅绮自10岁开始独身一人离家学习武术，23岁获得世界冠军，28岁实现武术大满贯后退役。在赛场之外，重新寻找另一种快意人生。</p> 
+					<div class="story_tab_contain showIn story_tab" id="s_tab_5">
+						<div class="dot" id="dot_10"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="story_5_screen5" id="story_5_screen5">
+				<div class="">
+					<div class="s5_textCtn_2">
+						<div class="s5_text_01_2" id="s5_text_01_2"></div>
+						<div class="s5_text_02_2" id="s5_text_02_2"></div>
+						<div class="s5_text_03_2" id="s5_text_03_2"></div>
+					</div>
+				</div>
+				<div class="end_btn showIn" id="btn_5">
+					<div class="end_btn_in f32">
+						下一个故事
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="story_6">
+			<div class="showIn color_w" id="story_6_screen3">
+				<div class="question_s">
+					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
+						<span class="f35 q_opcity40">你有梦想吗？</span>
+						<span class="f43">你缺钱吗？</span>
+						<span class="f25 q_opcity46">你还相信爱情吗？</span>
+						<span class="f37">你累吗？</span>
+					</div>
+					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
+						<span class="f29">你缺钱吗？</span>
+						<span class="f34">你有不能说的秘密吗？</span>
+					</div>
+					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
+						<span class="f27 q_opcity25">你创业了吗？</span>
+					</div>
+					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
+						<span class="f36">你是空巢青年吗？</span>
+						<span class="f25">你孤独吗？</span>
+					</div>
+					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
+						<span class="f43">世界这么大，你看过吗？</span>
+					</div>
+					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
+						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
+						<span class="f26 q_opcity74">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+					</div>
+					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
+						<span class="f36">你单身吗？</span>
+					</div>
+					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
+						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					</div>
+					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
+						<span class="f35">你还租房吗？</span>
+						<span class="f35 q_opcity53">你孤独吗？</span>
+					</div>
+					
+					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
+						<span class="f37">你有梦想吗？</span>
+					</div>
+					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
+						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					</div>
+					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
+						<span class="f49">你缺钱吗？</span>
+					</div>
+					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_6">
+						<span class="f52">你<span class="white_block">自由</span>吗？</span>
+					</div>
+					<div class="contain contain_shIn showIn delay_2_1">
+						<div class="dot" id="dot_11"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="screen4">
+				<div class="story">
+					<div class="story_title f32"><strong>张树鹏 翼装飞行师</strong></div>
+					<p class="story_text f25 mt22">翼装飞行是世界上最危险的极限运动，任何一个失误都可能造成致命后果。张树鹏的一些同行已经离开了这个世界，但他依然选择向着大地张开</p> 
+					<div class="story_tab_contain showIn story_tab" id="s_tab_6">
+						<div class="dot" id="dot_12"></div>
+						<div class="pulse"></div>
+						<div class="pulse1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="story_6_screen5" id="story_6_screen5">
+				<div class="">
+					<div class="s6_textCtn_2">
+						<div class="s6_text_01_2" id="s6_text_01_2"></div>
+						<div class="s6_text_02_2" id="s6_text_02_2"></div>
+					</div>
+				</div>
+				<div class="end_btn showIn" id="btn_6">
+					<div class="end_btn_in f32">
+						下一个故事
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="backCover">
+			<div class="backCover_img"></div>
+			<div class="backCover_txt"><p>————</p><p>新浪图片出品</p><p>————</p></div>
+			<div class="members">
+				<p>监制：翟红刚</p>    
+				<p>统筹：王怡</p>     
+				<p>设计：王岑</p>     
+				<p>前端：蒋慧斐</p> 
+				<p>摄影（按图片顺序排名）：王丹穗 肖翊 新新 章玉 杜国</p>
+				<p>策划：胡令丰</p>
+			</div>
+			<div class="btns_group">
+				<div class="bc_btn showIn" id="btn_7">
+					<div class="bc_btn_in f32">
+						重新观看
+					</div>
+				</div>
+				<div class="bc_btn showIn" id="btn_8">
+					<div class="bc_btn_in f32">
+						分享
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$("#dot_1").on('click', function(e){
+				$(this).parent("div").hide();
+			    $("#screen_3 .question").not("#keyword_1").each(function(index){
+			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+				});
+				
+				$(".story_1 .screen4").addClass("InUp");
+				$(".story_1 .screen4").show();
+				$("#s_img_1").addClass("story1shIn");
+				$("#s_img_1").show();
+				$("#s_tab_1").addClass("story1shIn");
+				$("#s_tab_1").show();
+			});
+			
+			$("#dot_2").on('click', function(e){
+				$(".story_1 .screen4").removeClass("InUp").addClass("OutDown");
+				$("#s_img_1").addClass("img_story_dark");
+				$("#screen5").addClass("screen5_shIn showIn");
+				$("#text_01_2").addClass("bounceInDown text_01_2bInD");
+				$("#text_02_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#text_03_2").addClass("slipInRight text_03_2_slInRight");
+				$("#btn_1").addClass("end_btnshIn").show();
+			});
+			
+			$("#dot_3").on('click', function(e){
+				$(this).parent("div").hide();
+			    $("#story_2_screen3 .question").not("#keyword_2").each(function(index){
+			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+				});
+				
+				$(".story_2 .screen4").addClass("InUp");
+				$(".story_2 .screen4").show();
+				$("#s_img_2").addClass("story1shIn");
+				$("#s_img_2").show();
+				$("#s_tab_2").addClass("story1shIn");
+				$("#s_tab_2").show();
+			});
+			
+			$("#dot_4").on('click', function(e){
+				$(".story_2 .screen4").removeClass("InUp").addClass("OutDown");
+				$("#s_img_2").addClass("img_story_dark");
+				$(".story_2_screen5").addClass("duration_1 showIn delay_0");
+				$("#s2_text_01_2").addClass("bounceInDown text_01_2bInD");
+				$("#s2_text_02_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#btn_2").addClass("end_btnshIn").show();
+			});
+			
+			$("#dot_5").on('click', function(e){
+				$(this).parent("div").hide();
+			    $("#story_3_screen3 .question").not("#keyword_3").each(function(index){
+			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+				});
+				
+				$(".story_3 .screen4").addClass("InUp");
+				$(".story_3 .screen4").show();
+				$("#s_img_3").addClass("story1shIn");
+				$("#s_img_3").show();
+				$("#s_tab_3").addClass("story1shIn");
+				$("#s_tab_3").show();
+			});
+			
+			$("#dot_6").on('click', function(e){
+				$(".story_3 .screen4").removeClass("InUp").addClass("OutDown");
+				$("#s_img_3").addClass("img_story_dark");
+				$(".story_3_screen5").addClass("duration_1 showIn delay_0");
+				$("#s3_text_01_2").addClass("bounceInDown text_01_2bInD");
+//				$("#s3_text_02_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#btn_3").addClass("end_btnshIn").show();
+			});
+			
+			$("#dot_7").on('click', function(e){
+				$(this).parent("div").hide();
+			    $("#story_4_screen3 .question").not("#keyword_4").each(function(index){
+			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+				});
+				
+				$(".story_4 .screen4").addClass("InUp");
+				$(".story_4 .screen4").show();
+				$("#s_img_4").addClass("story1shIn");
+				$("#s_img_4").show();
+				$("#s_tab_4").addClass("story1shIn");
+				$("#s_tab_4").show();
+			});
+			
+			$("#dot_8").on('click', function(e){
+				$(".story_4 .screen4").removeClass("InUp").addClass("OutDown");
+				$("#s_img_4").addClass("img_story_dark");
+				$(".story_4_screen5").addClass("duration_1 showIn delay_0");
+				$("#s4_text_01_2").addClass("bounceInDown text_01_2bInD");
+				$("#s4_text_02_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#btn_4").addClass("end_btnshIn").show();
+			});
+			
+			$("#dot_9").on('click', function(e){
+				$(this).parent("div").hide();
+			    $("#story_5_screen3 .question").not("#keyword_5").each(function(index){
+			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+				});
+				
+				$(".story_5 .screen4").addClass("InUp");
+				$(".story_5 .screen4").show();
+				$("#s_img_5").addClass("story1shIn");
+				$("#s_img_5").show();
+				$("#s_tab_5").addClass("story1shIn");
+				$("#s_tab_5").show();
+			});
+			
+			$("#dot_10").on('click', function(e){
+				$(".story_5 .screen4").removeClass("InUp").addClass("OutDown");
+				$("#s_img_5").addClass("img_story_dark");
+				$(".story_5_screen5").addClass("duration_1 showIn delay_0");
+				$("#s5_text_01_2").addClass("bounceInDown text_01_2bInD");
+				$("#s5_text_02_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#s5_text_03_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#btn_5").addClass("end_btnshIn").show();
+			});
+			
+			$("#dot_11").on('click', function(e){
+				$(this).parent("div").hide();
+			    $("#story_6_screen3 .question").not("#keyword_6").each(function(index){
+			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+				});
+				
+				$(".story_6 .screen4").addClass("InUp");
+				$(".story_6 .screen4").show();
+				$("#s_img_6").addClass("story1shIn");
+				$("#s_img_6").show();
+				$("#s_tab_6").addClass("story1shIn");
+				$("#s_tab_6").show();
+			});
+			
+			$("#dot_12").on('click', function(e){
+				$(".story_6 .screen4").removeClass("InUp").addClass("OutDown");
+				$("#s_img_6").addClass("img_story_dark");
+				$(".story_6_screen5").addClass("duration_1 showIn delay_0");
+				$("#s6_text_01_2").addClass("bounceInDown text_01_2bInD");
+				$("#s6_text_02_2").addClass("slipInleft text_02_2_slInLeft");
+				$("#btn_6").addClass("end_btnshIn").show();
+			});
+			
+			$("#btn_1").on('click', function(e){
+				$("#story_1").hide();
+				$("#s_img_1").hide();
+				$(this).hide();
+				$("#story_2_screen3").addClass("delay_0 screen3_shIn");
+				$(".story_2").show();
+			});
+			
+			$("#btn_2").on('click', function(e){
+				$(".story_2").hide();
+				$("#s_img_2").hide();
+				$(this).hide();
+				$("#story_3_screen3").addClass("delay_0 screen3_shIn");
+				$(".story_3").show();
+			});
+			
+			$("#btn_3").on('click', function(e){
+				$(".story_3").hide();
+				$("#s_img_3").hide();
+				$(this).hide();
+				$("#story_4_screen3").addClass("delay_0 screen3_shIn");
+				$(".story_4").show();
+			});
+			$("#btn_4").on('click', function(e){
+				$(".story_4").hide();
+				$("#s_img_4").hide();
+				$(this).hide();
+				$("#story_5_screen3").addClass("delay_0 screen3_shIn");
+				$(".story_5").show();
+			});
+			$("#btn_5").on('click', function(e){
+				$(".story_5").hide();
+				$("#s_img_5").hide();
+				$(this).hide();
+				$("#story_6_screen3").addClass("delay_0 screen3_shIn");
+				$(".story_6").show();
+			});
+			$("#btn_6").on('click', function(e){
+				$(".story_6").hide();
+				$("#s_img_6").hide();
+				$(this).hide();
+				$(".backCover").addClass("delay_0 screen3_shIn");
+				$(".backCover").show();
+			});
+		</script>
+	</body>
+</html>
