@@ -6,15 +6,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
 		<meta name="renderer" content="webkit">
 		<title>young</title>
-		<!--<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" type="text/css"/>-->
-    	<!--<link rel="stylesheet" href="animations.css" type="text/css"/>-->
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<!--<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
 		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
-    	<!--<script src="touch.js"></script>-->
-		<style type="text/css">
-
-		</style>
 		<script type="text/javascript">
 			var winW=document.documentElement.clientWidth;
 	        var desW=750;
@@ -24,9 +17,17 @@
 	            winW=desW;
 	        }
 	        document.documentElement.style.fontSize = winW/rem+"px";
+	        
+            var bh = window.screen.availHeight + "px";
+//          alert(bh);
+//	        console.log(bh);
+//	        $("body").css({
+//				"height":667px, 
+//			}); 
 		</script>
 	</head>
 	<body>
+		<div  class="bg_music"><audio src="http://file.ws.126.net/f2e/news/lc_dbz/files/Paul.mp3" preload="auto" loop="loop"></audio></div>
 		<div class="storys_bg_imgs">
 			<img src="images/story1.jpg" class="story_bg showIn" id="s_img_1"/>
 			<img src="images/story2.jpg" class="story_bg showIn" id="s_img_2"/>
@@ -34,53 +35,432 @@
 			<img src="images/story4.jpg" class="story_bg showIn" id="s_img_4"/>
 			<img src="images/story5.jpg" class="story_bg showIn" id="s_img_5"/>
 			<img src="images/story6.jpg" class="story_bg showIn" id="s_img_6"/>
+			<div id="mask"></div>
 		</div>
-		<div class="shadow" style="opacity: 0;"></div>
-		<div class="question_s" style="display: none;">
-			<div class="question w25 fall group-1-f">
-				<span class="f26 blurZoom group-1-bz">你还在减肥吗？</span>
-				<span class="f26 q_opcity23 blurZoom group-1-bz">你满意现在的工作吗？</span>
+		<div class="question_s fall50 duration_4 delay_0" style="color:white;">
+			<div class="blurZoom duration_2 delay_2">
+			<div class="question w25 duration_4 delay_0">
+				<div class="up50 duration_2 delay_2">		
+				<!--<div class="blurZoom duration_2 delay_2">-->	
+					<span class="f26">你还在减肥吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="f26">你的身体被掏空了吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f26">你还在减肥吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="f26">你的身体被掏空了吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+				<!--</div>-->
+				</div>
 			</div>
-			<div class="question w57 l42 fall group-2-f">
-				<span class="f26 blurZoom group-2-bz">你的身体被掏空了吗？</span>
-				<span class="f51 blurZoom group-2-bz">你还<span class="white_block"><strong>租房</strong></span>住吗？</span>
-				<span class="f51 blurZoom group-2-bz">你怎么还没结婚？</span>
+			<div class="question w57 l42 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<!--<div class="up50 duration_2 delay_2">-->
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f26">你的身体被掏空了吗？</span>
+					<span class="f51">你还<span class="white_block"><strong>租房</strong></span>住吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f26">你的身体被掏空了吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f51">你还<span class="white_block"><strong>租房</strong></span>住吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f26">你的身体被掏空了吗？</span>
+					<span class="f51">你还<span class="white_block"><strong>租房</strong></span>住吗？</span>
+					<span class="f51">你怎么还没结婚？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47">你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+				<!--</div>-->
+				<!--</div>-->
 			</div>
-			<div class="question w38 l110 fall group-3-f">
-				<span class="f38 blurZoom group-3-bz">多久没给爸妈打电话了？</span>
-				<span class="f35 q_opcity35 blurZoom group-3-bz">你累吗？</span>
-				<span class="f30 blurZoom group-3-bz">你的身体被掏空了吗？</span>
+			<div class="question w38 l110 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<div class="up50 duration_2 delay_2">
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+				<!--</div>-->
+				</div>
 			</div>
-			<div class="question w25 l117 fall group-4-f"><span class="f26 q_opcity23 blurZoom group-4-bz">你满意现在的工作吗？</span></div>
-			<div class="question w25 l157 fall group-5-f"><span class="q_opcity41 f26 blurZoom group-5-bz">你记得自己的梦想吗？</span></div>
-			<div class="question w71 l192 fall group-6-f">
-				<span class="f48 blurZoom group-6-bz">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
-				<span class="f47 blurZoom group-6-bz">你有<span class="white_block">梦想</span>吗？</span>
-				<span class="f55 blurZoom group-6-bz">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+			<div class="question w25 l170 duration_4 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<!--<div class="up50 duration_2 delay_2">-->
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+				<!--</div>-->
+				<!--</div>-->
 			</div>
-			<div class="question w35 l263 fall group-7-f">
-				<span class="f24 blurZoom group-7-bz">你记得自己的梦想吗？</span>
-				<span class="f41 blurZoom group-7-bz">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
-				<span class="f35 blurZoom group-7-bz">你有喜欢的人吗？</span>
+			<div class="question w71 l192 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<div class="up50 duration_2 delay_2">
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f38">多久没给爸妈打电话了？</span>
+					<span class="f35 q_opcity35">你累吗？</span>
+					<span class="f30">你的身体被掏空了吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+				<!--</div>-->
+				</div>
 			</div>
-			<div class="question w25 l340 fall group-8-f"><span class="f26 blurZoom group-8-bz">你为什么选择<span class="white_block">北漂</span>？</span></div>
-			<div class="question w60 l318 fall group-9-f">
-				<span class="f48 blurZoom group-9-bz">你<span class="white_block"><strong>自由</strong></span>吗？</span>
-				<span class="f26 blurZoom group-9-bz">你单身吗？</span>
-				<span class="f26 q_opcity35 blurZoom group-9-bz">你有梦想吗？</span>
+			<div class="question w35 l263 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<!--<div class="up50 duration_2 delay_2">-->
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+				<!--</div>-->
+				<!--</div>-->
 			</div>
-			<div class="question w57 l375 fall group-10-f">
-				<span class="f35 q_opcity35 blurZoom group-10-bz">你记得自己的梦想吗？</span>
-				<span class="f35 blurZoom group-10-bz">你缺钱吗？</span>
-				<span class="f49 blurZoom group-10-bz">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+			<div class="question w60 l318 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<div class="up50 duration_2 delay_2">
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+				</d<!--i-->v>
+				</div>
 			</div>
-			<div class="question w52 l442 fall group-11-f">
-				<span class="f32 blurZoom group-11-bz">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
-				<span class="f33 q_opcity35 blurZoom group-11-bz">你对未来担心吗？</span>
-				<span class="f47 blurZoom group-11-bz" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+			<div class="question w57 l375 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<!--<div class="up50 duration_2 delay_2">-->
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+				<!--</div>-->
+				<!--</div>-->
+			</div>
+			<div class="question w52 l442 duration_3 delay_0">
+				<!--<div class="blurZoom duration_3 delay_0">-->
+				<div class="up50 duration_2 delay_2">
+					<!--<div class="blurZoom duration_2 delay_2">-->
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f49">你的努力有<span class="white_block"><strong>回报</strong></span>吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f47" >你<span class="white_block"><strong>压力</strong></span>大吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="f35 q_opcity35">你记得自己的梦想吗？</span>
+					<span class="f35">你缺钱吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26 q_opcity23">你满意现在的工作吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35 ">你有梦想吗？</span>
+					<span class="f48">你今天准时<span class="white_block"><strong>打卡</strong></span>了吗？</span>
+					<span class="f47">你有<span class="white_block">梦想</span>吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+					<span class="f26 q_opcity35">你有梦想吗？</span>
+					<span class="q_opcity41 f26">你记得自己的梦想吗？</span>
+					<span class="f32">你工作的城市<span class="white_block"><strong>房价</strong></span>是多少？</span>
+					<span class="f33 q_opcity35">你对未来担心吗？</span>
+					<span class="f55">你还相信<span class="white_block"><strong>爱情</strong></span>吗？</span>
+					<span class="f24">你记得自己的梦想吗？</span>
+					<span class="f41">你的<span class="rotate_ninety_drgree">KPI</span>完成了吗？</span>
+					<span class="f35">你有喜欢的人吗？</span>
+					<span class="f48">你<span class="white_block"><strong>自由</strong></span>吗？</span>
+					<span class="f26">你单身吗？</span>
+				<!--</div>-->
+				</div>
 			</div>
 		</div>
-		<div class="story_1" id="story_1">
+		</div>
+		<div class="story_1 story_ctn" id="story_1">
 			<div class="screen2">
 				<div class="fadeOut">
 					<div class="logo logo_shIn showIn"></div>
@@ -90,75 +470,208 @@
 					</div>
 				</div>
 				<div class="sign f40 slipInleft sign_slInLeft">
-					<div class="fadeOut" style="display: inline-block;">————</div> 
+					<div class="fadeOut" style="display: inline-block;height: 0.4rem;position: relative;width: 1.44rem;"><div class="line"></div></div>  
 					<span class="Horizontal shift" style="display: inline-block;"> 年轻</span>
 					<span class="Horizontal shift_2" style="display: inline-block;">人</span>
 					<span class="Horizontal shift_3" style="display: inline-block;">这么</span>
 					<span class="Horizontal fadeOut" style="display: inline-block;">说！</span> 
 				</div>
 			</div>
-			<div class="screen3 screen3_shIn showIn color_w" id="screen_3">
+			<div class="delay_10 screen3_shIn showIn color_w" id="screen_3">
 				<div class="question_s">
-					<div class="question w49 l33 fall_3_other_13 group-f-3 srceen3" id="aa">
-						<span class="f35 q_opcity40">你有梦想吗？</span>
+					<div class="question w49 l33 fall_3_other_2 delay_10_1 duration_3" id="aa">
+						<span class="f35 q_opcity40" style="margin-top: 2.62rem;">你有梦想吗？</span>
 						<span class="f43">你缺钱吗？</span>
 						<span class="f25 q_opcity46">你还相信爱情吗？</span>
 						<span class="f37">你累吗？</span>
-					</div>
-					<div class="question w45 l132 fall_3_other_2 group-f-3_other srceen3">
-						<span class="f41">你怎么还没结婚？</span>
-					</div>
-					<div class="question w43 l185 fall_3_other_3 group-f-3_other srceen3">
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
 						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
 						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
 					</div>
-					<div class="question w34 l234 fall_3_other_4 group-f-3_other srceen3">
-						<span class="f29">你缺钱吗？</span>
+					<div class="question w45 l132 fall_3_other_2 delay_10_1 duration_3">
+						<span class="f41" style="margin-top: 8.25rem;">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_2 delay_10_1 duration_3">
+						<span class="f28 q_opcity74" style="margin-top: 9.12rem;">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_2 delay_10_1 duration_2">
+						<span class="f29" style="margin-top: 7.2rem;">你缺钱吗？</span>
 						<span class="f34">你有不能说的秘密吗？</span>
 					</div>
-					<div class="question w28 l294 fall_3_other_5 group-f-3_other srceen3">
-						<span class="f27 q_opcity25">你创业了吗？</span>
-					</div>
-					<div class="question w37 l294 fall_3_other_7 group-f-3_other srceen3">
+					<div class="question w28 l294 fall_3_other_2 delay_10_1 duration_3">
+						<span class="f27 q_opcity25" style="margin-top: 7.26rem;">你创业了吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 					</div>
-					<div class="question w37 l338 fall_3_other_8 group-f-3_other srceen3">
-						<span class="f36">你是空巢青年吗？</span>
+					<div class="question w37 l294 fall_3_other_2 delay_10_1 duration_3">
+						<span class="f35 q_opcity53" style="margin-top: 8.85rem;">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						
+					</div>
+					<div class="question w37 l338 fall_3_other_2 delay_10_1 duration_3">
+						<span class="f36" style="margin-top: 7.29rem;">你是空巢青年吗？</span>
 						<span class="f25">你孤独吗？</span>
 					</div>
-					<div class="question w42 l375 fall_3_other_9 group-f-3_other srceen3">
-						<span class="f43">世界这么大，你看过吗？</span>
+					<div class="question w42 l375 fall_3_other_2 delay_10_1 duration_3">
+						<span class="f43" style="margin-top: 6.57rem;">世界这么大，你看过吗？</span>
 					</div>
-					<div class="question w41 l95 fall_3_other group-f-3 srceen3">
+					<div class="question w41 l95 fall_3_other_2 delay_10_1 duration_3">
 						<span class="f43">你有喜欢的人吗？</span>
 						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+							<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w34 l160 fall_3_other group-f-3 srceen3">
-						<span class="f26 q_opcity74">你还在减肥吗？</span>
+					<div class="question w34 l160 fall_3_other delay_10_1 duration_3">
+						<span class="f26 q_opcity74" style="margin-top: 2.96rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
 						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w36 l294 fall_3_other_6 group-f-3 srceen3">
-						<span class="f36">你单身吗？</span>
+					<div class="question w36 l294 fall_3_other delay_10_1 duration_3">
+						<span class="f36" style="margin-top: 3.9rem;">你单身吗？</span>
 					</div>
-					<div class="question w23 l284 fall_3_other group-f-3 srceen3">
-						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					<div class="question w23 l284 fall_3_other delay_10_1 duration_3">
+						<span class="f25 q_opcity53" style="margin-top: 0.78rem;">你记得自己的梦想吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 					</div>
-					<div class="question w35 l334 fall_3_other group-f-3 srceen3">
+					<div class="question w35 l334 fall_3_other delay_10_1 duration_3">
 						<span class="f35">你还租房吗？</span>
 						<span class="f35 q_opcity53">你孤独吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 					</div>
 					
-					<div class="question w35 l378 fall_3_other_10 group-f-3 srceen3">
-						<span class="f37">你有梦想吗？</span>
+					<div class="question w35 l378 fall_3_other delay_10_1 duration_3">
+						<span class="f37" style="margin-top: 4.09rem;">你有梦想吗？</span>
 					</div>
-					<div class="question w26 l428 fall_3_other_11 group-f-3 srceen3">
-						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					<div class="question w26 l428 fall_3_other delay_10_1 duration_3">
+						<span class="f26 q_opcity46" style="margin-top: 6.6rem;">你有喜欢的人吗？</span>
 					</div>
-					<div class="question w49 l428 fall_3_other_12 group-f-3 srceen3">
-						<span class="f49">你缺钱吗？</span>
+					<div class="question w49 l428 fall_3_other delay_10_1 duration_3">
+						<span class="f49" style="margin-top: 8.66rem;">你缺钱吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w77 fall_3 group-f-3 srceen3 mid" id="keyword_1">
+					<div class="question w77 fall_3 delay_10_1 duration_2 mid" id="keyword_1">
 						<span class="f52">你为什么选择<span class="white_block">北漂</span>？</span>
 					</div>
 					<div class="contain contain_shIn showIn srceen3_tab">
@@ -170,13 +683,18 @@
 			</div>
 			<div class="screen4">
 				<div class="story">
-					<div class="story_title f32"><strong>周志强，保安/表演系学生</strong></div>
-					<p class="story_text f25 mt22">晚上在北京电影学院做夜班保安，白天则是北影2014级表演专科班学生。</p> 
-					<p class="story_text f25">周志强曾做过仓管、后厨、司机、工厂操作员，但他都不喜欢。2013年，他带着身上仅有的500块钱，坐了20多个小时火车来到北京。</p>
-					<div class="story_tab_contain showIn story_tab" id="s_tab_1">
-						<div class="dot" id="dot_2"></div>
-						<div class="pulse"></div>
-						<div class="pulse1"></div>
+					<div class="story_title f32" id="story_title_1"><strong>周志强，保安/表演系学生</strong></div>
+					<div class="story_text f25 mt22">
+						晚上在北京电影学院做夜班保安，白天则是北影2014级表演专科班学生。周志强曾做过仓管、后厨、司机、工厂操作员，但他都不喜欢。2013年，他带着身上仅有的500块钱，坐了20多个小时火车来到北京。
+						<div class="showIn hesay f25" id="hesay_1">
+							他说......
+							<div class="story_tab_contain showIn" id="s_tab_1">
+								<div class="dot" id="dot_2"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							</div>
+						</div>
+						
 					</div>
 				</div>	
 			</div>
@@ -195,72 +713,142 @@
 				</div>
 			</div>
 		</div>
-		<div class="story_2">
+		<div class="story_2 story_ctn" id="story_2">
 			<div class="showIn color_w" id="story_2_screen3">
 				<div class="question_s">
-					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
-						<span class="f35 q_opcity40">你有梦想吗？</span>
-						<span class="f43">你缺钱吗？</span>
-						<span class="f25 q_opcity46">你还相信爱情吗？</span>
-						<span class="f37">你累吗？</span>
+					<div class="question w54 fall_3_other_2 duration_3 delay_0_1" id="aa">
+						<span class="f49" style="margin-top: -0.9rem;">你有喜欢的人吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
-						<span class="f41">你怎么还没结婚？</span>
-					</div>
-					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
-						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
-						<span class="f43">你满意现在的工作吗？</span>
-					</div>
-					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
-						<span class="f29">你缺钱吗？</span>
-						<span class="f34">你有不能说的秘密吗？</span>
-					</div>
-					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
-						<span class="f27 q_opcity25">你创业了吗？</span>
-					</div>
-					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+					<div class="question w45 l56 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f36 q_opcity56">你创业了吗</span>
+						<span class="f38 q_opcity34">你对未来担心吗</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
-					</div>
-					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
-						<span class="f36">你是空巢青年吗？</span>
-						<span class="f25">你孤独吗？</span>
-					</div>
-					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
-						<span class="f43">世界这么大，你看过吗？</span>
-					</div>
-					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
-						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
-						<span class="f26 q_opcity74">你还在减肥吗？</span>
+					<div class="question w51 l101 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f52" style="margin-top: 1.33rem;">你记得自己的梦想吗？</span>
+						<span class="f28 q_opcity24">你的身体被掏空了吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						
+					</div>
+					<div class="question w57 l152 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f46" style="margin-top: -0.96rem;">你满意现在的工作吗？</span>
+						<span class="f37">你记得自己的梦想？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+					</div>
+					<div class="question w54 l209 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f52">你离开家多久了？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
 						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
-						<span class="f36">你单身吗？</span>
+					<div class="question w33 l263 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28 q_opcity24">你的身体被掏空了吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
-						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					<div class="question w54 l296 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f49" style="margin-top: -1.05rem;">多久没给爸妈打电话了？</span>
+						<span class="f37">你工作的城市房价是多少？</span>	
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
-						<span class="f35">你还租房吗？</span>
-						<span class="f35 q_opcity53">你孤独吗？</span>
+					<div class="question w39 l350 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28" style="margin-top: -0.69rem;">你还减肥吗？</span>
+						<span class="f37 q_opcity56">你的KPI完成了吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					
-					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
-						<span class="f37">你有梦想吗？</span>
+					<div class="question w39 l389 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28 q_opcity24" style="margin-top: 6.57rem;">你的身体被搁浅了吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
-						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
-					</div>
-					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
-						<span class="f49">你缺钱吗？</span>
-					</div>
-					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_2">
+					<div class="question w77 fall_3 delay_1_1 duration_2 mid" id="keyword_2" style="margin-top: 3rem;">
 						<span class="f52">你有<span class="white_block">梦想</span>吗？</span>
 					</div>
-					<div class="contain contain_shIn showIn delay_2_1">
+					<div class="contain contain_shIn showIn delay_3">
 						<div class="dot" id="dot_3"></div>
 						<div class="pulse"></div>
 						<div class="pulse1"></div>
@@ -269,13 +857,19 @@
 			</div>
 			<div class="screen4">
 				<div class="story">
-					<div class="story_title f32"><strong>惠子  女主播</strong></div>
-					<p class="story_text f25 mt22">没有任何粉丝基础的惠子，在万圣节前夕把自己打扮成僵尸的模样，来到三里屯街头进行直播。这一举动成功吸引了超过百万人次的线上围观，</p> 
-					<div class="story_tab_contain showIn story_tab" id="s_tab_2">
-						<div class="dot" id="dot_4"></div>
-						<div class="pulse"></div>
-						<div class="pulse1"></div>
-					</div>
+					<div class="story_title f32 w232" id="story_title_2"><strong>惠子  女主播</strong></div>
+					<div class="story_text f25 mt22">
+						没有任何粉丝基础的惠子，在万圣节前夕把自己打扮成僵尸的模样，来到三里屯街头进行直播。这一举动成功吸引了超过百万人次的线上围观，为她打开了主播之路。
+						<div class="showIn hesay f25" id="hesay_2">
+							他说......
+							<div class="story_tab_contain showIn story_tab" id="s_tab_2">
+								<div class="dot" id="dot_4"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							</div>
+						</div>
+					</div> 
+					
 				</div>	
 			</div>
 			<div class="story_2_screen5" id="story_2_screen5">
@@ -292,72 +886,104 @@
 				</div>
 			</div>
 		</div>
-		<div class="story_3">
+		<div class="story_3 story_ctn" id="story_3">
 			<div class="showIn color_w" id="story_3_screen3">
 				<div class="question_s">
-					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
-						<span class="f35 q_opcity40">你有梦想吗？</span>
-						<span class="f43">你缺钱吗？</span>
-						<span class="f25 q_opcity46">你还相信爱情吗？</span>
-						<span class="f37">你累吗？</span>
+					<div class="question w57 l33 fall_3_other_2 duration_3 delay_0_1" id="aa">
+						<span class="f49" style="margin-top: 0.31rem;">你的身体被掏空了吗？</span>
+						<span class="f34 q_opcity25">你有喜欢的人吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
-						<span class="f41">你怎么还没结婚？</span>
-					</div>
-					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
-						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
-						<span class="f43">你满意现在的工作吗？</span>
-					</div>
-					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
-						<span class="f29">你缺钱吗？</span>
-						<span class="f34">你有不能说的秘密吗？</span>
-					</div>
-					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
-						<span class="f27 q_opcity25">你创业了吗？</span>
-					</div>
-					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+					<div class="question w45 l93 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f43 q_opcity25" style="margin-top: 1.36rem;">你孤独吗？</span>
+						<span class="f36" style="margin-top: 5rem;">你记得自己的梦想吗？</span>
+						<span class="f38 q_opcity74">你还相信爱情吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
-					</div>
-					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
-						<span class="f36">你是空巢青年吗？</span>
-						<span class="f25">你孤独吗？</span>
-					</div>
-					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
-						<span class="f43">世界这么大，你看过吗？</span>
-					</div>
-					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
-						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
-						<span class="f26 q_opcity74">你还在减肥吗？</span>
+					<div class="question w54 l140 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f54" style="margin-top: 1.00rem;">多久没给爸妈打电话了？</span>
+						<span class="f44">你还在租房住吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
 						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
-						<span class="f36">你单身吗？</span>
+					<div class="question w34 l210 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f38" style="margin-top: -1.06rem;">你是空巢青年吗？</span>
+						<span class="f30 q_opcity56">你满意现在的工作吗？</span>
+						<span class="f38">你单身吗？</span>
+						<span class="f34 q_opcity15">你有梦想吗？</span>
+						<span class="f50">你怎么还没结婚？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
-						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					<div class="question w40 l255 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f40" style="margin-top: 0.55rem;">你KPI完成了吗？</span>
+						<span class="f30 q_opcity56">你创业了吗？</span>
+						<span class="f36">你离开家多久了？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
-						<span class="f35">你还租房吗？</span>
-						<span class="f35 q_opcity53">你孤独吗？</span>
+					<div class="question w38 l368 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f38 q_opcity25" style="margin-top: 4.24rem;">你缺钱吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					
-					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
-						<span class="f37">你有梦想吗？</span>
-					</div>
-					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
-						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
-					</div>
-					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
-						<span class="f49">你缺钱吗？</span>
-					</div>
-					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_3">
+					<div class="question w77 l298 fall_3 delay_1_1 duration_2 mt259" id="keyword_3">
 						<span class="f52">你的努力有<span class="white_block">回报</span>吗？</span>
 					</div>
-					<div class="contain contain_shIn showIn delay_2_1">
+					<div class="contain contain_shIn showIn delay_3">
 						<div class="dot" id="dot_5"></div>
 						<div class="pulse"></div>
 						<div class="pulse1"></div>
@@ -366,13 +992,19 @@
 			</div>
 			<div class="screen4">
 				<div class="story">
-					<div class="story_title f32"><strong>陆海荣  舞蛹学员</strong></div>
-					<p class="story_text f25 mt22">卢海荣独自远赴日本生活了16年，只为等待一个学习歌舞伎的机会。歌舞伎对学员有严格要求，必须是23岁以下的日本男性，卢海荣没有资格。比起放弃，他选择了一场看不到尽头的等待。</p> 
-					<div class="story_tab_contain showIn story_tab" id="s_tab_3">
-						<div class="dot" id="dot_6"></div>
-						<div class="pulse"></div>
-						<div class="pulse1"></div>
-					</div>
+					<div class="story_title f32 w294" id="story_title_3"><strong>陆海荣  舞蛹学员</strong></div>
+					<div class="story_text f25 mt22">
+						卢海荣独自远赴日本生活了16年，只为等待一个学习歌舞伎的机会。歌舞伎对学员有严格要求，必须是23岁以下的日本男性，卢海荣没有资格。比起放弃，他选择了一场看不到尽头的等待。
+						<div class="showIn hesay f25" id="hesay_3">
+							他说......
+							<div class="story_tab_contain showIn story_tab" id="s_tab_3">
+								<div class="dot" id="dot_6"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							</div>
+						</div>
+					</div> 
+					
 				</div>	
 			</div>
 			<div class="story_3_screen5" id="story_3_screen5">
@@ -388,72 +1020,205 @@
 				</div>
 			</div>
 		</div>
-		<div class="story_4">
+		<div class="story_4 story_ctn" id="story_4">
 			<div class="showIn color_w" id="story_4_screen3">
 				<div class="question_s">
-					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
-						<span class="f35 q_opcity40">你有梦想吗？</span>
+					<div class="question w49 l33 fall_3_other_2 duration_3 delay_0_1" id="aa">
+						<span class="f35 q_opcity40" style="margin-top: 2.62rem;">你有梦想吗？</span>
 						<span class="f43">你缺钱吗？</span>
 						<span class="f25 q_opcity46">你还相信爱情吗？</span>
 						<span class="f37">你累吗？</span>
-					</div>
-					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
-						<span class="f41">你怎么还没结婚？</span>
-					</div>
-					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
 						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
 						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
 					</div>
-					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
-						<span class="f29">你缺钱吗？</span>
+					<div class="question w45 l132 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f41" style="margin-top: 8.25rem;">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w43 l185 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28 q_opcity74" style="margin-top: 9.12rem;">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+						<span class="f41" style="margin-top: 5rem;">你怎么还没结婚？</span>
+						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
+						<span class="f43">你满意现在的工作吗？</span>
+						<span class="f41">你怎么还没结婚？</span>
+					</div>
+					<div class="question w34 l234 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f29" style="margin-top: 7.2rem;">你缺钱吗？</span>
 						<span class="f34">你有不能说的秘密吗？</span>
 					</div>
-					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
-						<span class="f27 q_opcity25">你创业了吗？</span>
-					</div>
-					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+					<div class="question w28 l294 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f27 q_opcity25" style="margin-top: 7.26rem;">你创业了吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 					</div>
-					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
-						<span class="f36">你是空巢青年吗？</span>
+					<div class="question w37 l294 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f35 q_opcity53" style="margin-top: 8.85rem;">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						
+					</div>
+					<div class="question w37 l338 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f36" style="margin-top: 7.29rem;">你是空巢青年吗？</span>
 						<span class="f25">你孤独吗？</span>
 					</div>
-					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
-						<span class="f43">世界这么大，你看过吗？</span>
+					<div class="question w42 l375 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f43" style="margin-top: 6.57rem;">世界这么大，你看过吗？</span>
 					</div>
-					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
+					<div class="question w41 l95 fall_3_other_2 duration_3 delay_0_1">
 						<span class="f43">你有喜欢的人吗？</span>
 						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+							<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
-						<span class="f26 q_opcity74">你还在减肥吗？</span>
+					<div class="question w34 l160 fall_3_other duration_3 delay_0_1">
+						<span class="f26 q_opcity74" style="margin-top: 2.96rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
 						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
-						<span class="f36">你单身吗？</span>
+					<div class="question w36 l294 fall_3_other duration_3 delay_0_1">
+						<span class="f36" style="margin-top: 3.9rem;">你单身吗？</span>
 					</div>
-					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
-						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					<div class="question w23 l284 fall_3_other duration_3 delay_0_1">
+						<span class="f25 q_opcity53" style="margin-top: 0.78rem;">你记得自己的梦想吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 					</div>
-					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
+					<div class="question w35 l334 fall_3_other_2 duration_3 delay_0_1">
 						<span class="f35">你还租房吗？</span>
 						<span class="f35 q_opcity53">你孤独吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 					</div>
 					
-					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
-						<span class="f37">你有梦想吗？</span>
+					<div class="question w35 l378 fall_3_other duration_3 delay_0_1">
+						<span class="f37" style="margin-top: 4.09rem;">你有梦想吗？</span>
 					</div>
-					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
-						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					<div class="question w26 l428 fall_3_other duration_3 delay_0_1">
+						<span class="f26 q_opcity46" style="margin-top: 6.6rem;">你有喜欢的人吗？</span>
 					</div>
-					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
-						<span class="f49">你缺钱吗？</span>
+					<div class="question w49 l428 fall_3_other duration_3 delay_0_1">
+						<span class="f49" style="margin-top: 8.66rem;">你缺钱吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_4">
+					<div class="question w77 fall_3 delay_1_1 duration_2 mid" id="keyword_4">
 						<span class="f52">你今天准时<span class="white_block">打卡</span>了吗？</span>
 					</div>
-					<div class="contain contain_shIn showIn delay_2_1">
+					<div class="contain contain_shIn showIn delay_3">
 						<div class="dot" id="dot_7"></div>
 						<div class="pulse"></div>
 						<div class="pulse1"></div>
@@ -462,13 +1227,19 @@
 			</div>
 			<div class="screen4">
 				<div class="story">
-					<div class="story_title f32"><strong>张健  陶匠</strong></div>
-					<p class="story_text f25 mt22">从中央美术学院毕业后，张建便离开北京，扎根景德镇，一心研究柴烧这种古老的制陶技艺。在景德镇，像张建这样的“景漂”青年约有两万人。</p> 
-					<div class="story_tab_contain showIn story_tab" id="s_tab_4">
-						<div class="dot" id="dot_8"></div>
-						<div class="pulse"></div>
-						<div class="pulse1"></div>
-					</div>
+					<div class="story_title f32 w192" id="story_title_4"><strong>张健  陶匠</strong></div>
+					<div class="story_text f25 mt22">
+						从中央美术学院毕业后，张建便离开北京，扎根景德镇，一心研究柴烧这种古老的制陶技艺。在景德镇，像张建这样的“景漂”青年约有两万人。
+						<div class="showIn hesay f25" id="hesay_4">
+							他说......
+							<div class="story_tab_contain showIn story_tab" id="s_tab_4">
+								<div class="dot" id="dot_8"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							</div>
+						</div>
+					</div> 
+					
 				</div>	
 			</div>
 			<div class="story_4_screen5" id="story_4_screen5">
@@ -485,72 +1256,141 @@
 				</div>
 			</div>
 		</div>
-		<div class="story_5">
+		<div class="story_5 story_ctn" id="story_5">
 			<div class="showIn color_w" id="story_5_screen3">
 				<div class="question_s">
-					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
-						<span class="f35 q_opcity40">你有梦想吗？</span>
-						<span class="f43">你缺钱吗？</span>
-						<span class="f25 q_opcity46">你还相信爱情吗？</span>
-						<span class="f37">你累吗？</span>
+					<div class="question w54 fall_3_other_2 duration_3 delay_0_1" id="aa">
+						<span class="f49" style="margin-top: -0.9rem;">你有喜欢的人吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
-						<span class="f41">你怎么还没结婚？</span>
-					</div>
-					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
-						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
-						<span class="f43">你满意现在的工作吗？</span>
-					</div>
-					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
-						<span class="f29">你缺钱吗？</span>
-						<span class="f34">你有不能说的秘密吗？</span>
-					</div>
-					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
-						<span class="f27 q_opcity25">你创业了吗？</span>
-					</div>
-					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+					<div class="question w45 l56 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f36 q_opcity56">你创业了吗</span>
+						<span class="f38 q_opcity34">你对未来担心吗</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
-					</div>
-					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
-						<span class="f36">你是空巢青年吗？</span>
-						<span class="f25">你孤独吗？</span>
-					</div>
-					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
-						<span class="f43">世界这么大，你看过吗？</span>
-					</div>
-					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
-						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
-						<span class="f26 q_opcity74">你还在减肥吗？</span>
+					<div class="question w51 l101 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f52" style="margin-top: 1.33rem;">你记得自己的梦想吗？</span>
+						<span class="f28 q_opcity24">你的身体被掏空了吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
 						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
-						<span class="f36">你单身吗？</span>
+					<div class="question w57 l152 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f46" style="margin-top: -0.96rem;">你满意现在的工作吗？</span>
+						<span class="f37">你记得自己的梦想？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
-						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					<div class="question w54 l209 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f52">你离开家多久了？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>	
 					</div>
-					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
-						<span class="f35">你还租房吗？</span>
-						<span class="f35 q_opcity53">你孤独吗？</span>
+					<div class="question w33 l263 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28 q_opcity24">你的身体被掏空了吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					
-					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
-						<span class="f37">你有梦想吗？</span>
+					<div class="question w54 l296 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f49" style="margin-top: -1.05rem;">多久没给爸妈打电话了？</span>
+						<span class="f37">你工作的城市房价是多少？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
-						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
+					<div class="question w39 l350 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28" style="margin-top: -0.69rem;">你还减肥吗？</span>
+						<span class="f37 q_opcity56">你的KPI完成了吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
-						<span class="f49">你缺钱吗？</span>
+					<div class="question w39 l389 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f28 q_opcity24" style="margin-top: 6.57rem;">你的身体被搁浅了吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>	
 					</div>
-					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_5">
+					<div class="question w77 fall_3 delay_1_1 duration_2 mid" id="keyword_5" style="margin-top: 3rem;">
 						<span class="f52">你<span class="white_block">压力</span>大吗？</span>
 					</div>
-					<div class="contain contain_shIn showIn delay_2_1">
+					<div class="contain contain_shIn showIn delay_3">
 						<div class="dot" id="dot_9"></div>
 						<div class="pulse"></div>
 						<div class="pulse1"></div>
@@ -558,14 +1398,20 @@
 				</div>
 			</div>
 			<div class="screen4">
-				<div class="story" id="story_6_screen3">
-					<div class="story_title f32 w537" id="story_title_6"><strong>毛娅绮 退役冠军/体育公司CEO</strong></div>
-					<p class="story_text f25 mt22">毛娅绮自10岁开始独身一人离家学习武术，23岁获得世界冠军，28岁实现武术大满贯后退役。在赛场之外，重新寻找另一种快意人生。</p> 
-					<div class="story_tab_contain showIn story_tab" id="s_tab_5">
-						<div class="dot" id="dot_10"></div>
-						<div class="pulse"></div>
-						<div class="pulse1"></div>
-					</div>
+				<div class="story" id="story_5_screen3">
+					<div class="story_title f32 w537" id="story_title_5"><strong>毛娅绮 退役冠军/体育公司CEO</strong></div>
+					<div class="story_text f25 mt22">
+						毛娅绮自10岁开始独身一人离家学习武术，23岁获得世界冠军，28岁实现武术大满贯后退役。在赛场之外，重新寻找另一种快意人生。
+						<div class="showIn hesay f25" id="hesay_5">
+							他说......
+							<div class="story_tab_contain showIn story_tab" id="s_tab_5">
+								<div class="dot" id="dot_10"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							</div>
+						</div>
+					</div> 
+					
 				</div>	
 			</div>
 			<div class="story_5_screen5" id="story_5_screen5">
@@ -583,72 +1429,105 @@
 				</div>
 			</div>
 		</div>
-		<div class="story_6">
+		<div class="story_6 story_ctn" id="story_6">
 			<div class="showIn color_w" id="story_6_screen3">
 				<div class="question_s">
-					<div class="question w49 l33 fall_3_other_13 group-f-3 delay_0_1" id="aa">
-						<span class="f35 q_opcity40">你有梦想吗？</span>
-						<span class="f43">你缺钱吗？</span>
-						<span class="f25 q_opcity46">你还相信爱情吗？</span>
-						<span class="f37">你累吗？</span>
+					<div class="question w57 l33 fall_3_other_2 duration_3 delay_0_1" id="aa">
+						<span class="f49" style="margin-top: 0.31rem;">你的身体被掏空了吗？</span>
+						<span class="f34 q_opcity25">你有喜欢的人吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w45 l132 fall_3_other_2 group-f-3 delay_0_1">
-						<span class="f41">你怎么还没结婚？</span>
-					</div>
-					<div class="question w43 l185 fall_3_other_3 group-f-3_other delay_0_1">
-						<span class="f28 q_opcity74">你的KPI完成了吗？</span>
-						<span class="f43">你满意现在的工作吗？</span>
-					</div>
-					<div class="question w34 l234 fall_3_other_4 group-f-3_other delay_0_1">
-						<span class="f29">你缺钱吗？</span>
-						<span class="f34">你有不能说的秘密吗？</span>
-					</div>
-					<div class="question w28 l294 fall_3_other_5 group-f-3_other delay_0_1">
-						<span class="f27 q_opcity25">你创业了吗？</span>
-					</div>
-					<div class="question w37 l294 fall_3_other_7 group-f-3_other delay_0_1">
+					<div class="question w45 l93 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f43 q_opcity25" style="margin-top: 1.36rem;">你孤独吗？</span>
+						<span class="f36" style="margin-top: 5rem;">你记得自己的梦想吗？</span>
+						<span class="f38 q_opcity74">你还相信爱情吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
-					</div>
-					<div class="question w37 l338 fall_3_other_8 group-f-3_other delay_0_1">
-						<span class="f36">你是空巢青年吗？</span>
-						<span class="f25">你孤独吗？</span>
-					</div>
-					<div class="question w42 l375 fall_3_other_9 group-f-3_other delay_0_1">
-						<span class="f43">世界这么大，你看过吗？</span>
-					</div>
-					<div class="question w41 l95 fall_3_other group-f-3 delay_0_1">
-						<span class="f43">你有喜欢的人吗？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
 						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
 						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w34 l160 fall_3_other group-f-3 delay_0_1">
-						<span class="f26 q_opcity74">你还在减肥吗？</span>
+					<div class="question w54 l140 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f54" style="margin-top: 1.00rem;">多久没给爸妈打电话了？</span>
+						<span class="f44">你还在租房住吗？</span>
+						<span class="f32 q_opcity25" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
 						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w36 l294 fall_3_other_6 group-f-3 delay_0_1">
-						<span class="f36">你单身吗？</span>
+					<div class="question w34 l210 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f38" style="margin-top: -1.06rem;">你是空巢青年吗？</span>
+						<span class="f30 q_opcity56">你满意现在的工作吗？</span>
+						<span class="f38">你单身吗？</span>
+						<span class="f34 q_opcity15">你有梦想吗？</span>
+						<span class="f50">你怎么还没结婚？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					<div class="question w23 l284 fall_3_other group-f-3 delay_0_1">
-						<span class="f25 q_opcity53">你记得自己的梦想吗？</span>
+					<div class="question w40 l255 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f40" style="margin-top: 0.55rem;">你KPI完成了吗？</span>
+						<span class="f30 q_opcity56">你创业了吗？</span>
+						<span class="f36">你离开家多久了？</span>
+						<span class="f26 q_opcity74" style="margin-top: 10rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
+						<span class="f26 q_opcity74" style="margin-top: 5rem;">你还在减肥吗？</span>
+						<span class="f34">你觉得自己还年轻吗？</span>
 					</div>
-					<div class="question w35 l334 fall_3_other group-f-3 delay_0_1">
-						<span class="f35">你还租房吗？</span>
-						<span class="f35 q_opcity53">你孤独吗？</span>
+					<div class="question w38 l368 fall_3_other_2 duration_3 delay_0_1">
+						<span class="f38 q_opcity25" style="margin-top: 4.24rem;">你缺钱吗？</span>
+						<span class="f43" style="margin-top: 10rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
+						<span class="f43" style="margin-top: 5rem;">你有喜欢的人吗？</span>
+						<span class="f27 q_opcity46">你身体被掏空了吗？</span>
+						<span class="f35 q_opcity53">你离开家多久了？</span>
 					</div>
-					
-					<div class="question w35 l378 fall_3_other_10 group-f-3 delay_0_1">
-						<span class="f37">你有梦想吗？</span>
-					</div>
-					<div class="question w26 l428 fall_3_other_11 group-f-3 delay_0_1">
-						<span class="f26 q_opcity46">你有喜欢的人吗？</span>
-					</div>
-					<div class="question w49 l428 fall_3_other_12 group-f-3 delay_0_1">
-						<span class="f49">你缺钱吗？</span>
-					</div>
-					<div class="question w77 fall_3 group-f-3 delay_0_1 mid" id="keyword_6">
+					<div class="question w77 l298 fall_3 delay_1_1 duration_2 mt259" id="keyword_6">
 						<span class="f52">你<span class="white_block">自由</span>吗？</span>
 					</div>
-					<div class="contain contain_shIn showIn delay_2_1">
+					<div class="contain contain_shIn showIn delay_3">
 						<div class="dot" id="dot_11"></div>
 						<div class="pulse"></div>
 						<div class="pulse1"></div>
@@ -657,13 +1536,18 @@
 			</div>
 			<div class="screen4">
 				<div class="story">
-					<div class="story_title f32"><strong>张树鹏 翼装飞行师</strong></div>
-					<p class="story_text f25 mt22">翼装飞行是世界上最危险的极限运动，任何一个失误都可能造成致命后果。张树鹏的一些同行已经离开了这个世界，但他依然选择向着大地张开</p> 
-					<div class="story_tab_contain showIn story_tab" id="s_tab_6">
-						<div class="dot" id="dot_12"></div>
-						<div class="pulse"></div>
-						<div class="pulse1"></div>
-					</div>
+					<div class="story_title f32 w333" id="story_title_6"><strong>张树鹏 翼装飞行师</strong></div>
+					<div class="story_text f25 mt22">翼装飞行是世界上最危险的极限运动，任何一个失误都可能造成致命后果。张树鹏的一些同行已经离开了这个世界，但他依然选择向着大地张开臂膀，仿佛拥有臂膀一样。
+						<div class="showIn hesay f25" id="hesay_6">
+							他说......
+							<div class="story_tab_contain showIn story_tab" id="s_tab_6">
+								<div class="dot" id="dot_12"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							</div>
+						</div>
+					</div> 
+					
 				</div>	
 			</div>
 			<div class="story_6_screen5" id="story_6_screen5">
@@ -675,12 +1559,16 @@
 				</div>
 				<div class="end_btn showIn" id="btn_6">
 					<div class="end_btn_in f32">
-						下一个故事
+						年轻人说
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="backCover">
+		<div class="story_7" id="story_7">
+			<div class="slogan_ctn showIn"><div class="slogan"></div></div>
+		</div>
+	<div class="story_8" id="story_8">
+		<div class="backCover InUp_2">
 			<div class="backCover_img"></div>
 			<div class="backCover_txt"><p>————</p><p>新浪图片出品</p><p>————</p></div>
 			<div class="members">
@@ -704,36 +1592,70 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
+		</div>
+		<script type="text/javascript">			
+			var flag1 = false;
+			setTimeout(function(){
+				$("#story_1 .question_s").on('touchstart click',function(e){
+					if (!flag1) {
+					 	flag1 = true;
+					 	setTimeout(function(){ flag1 = false; }, 100);
+					 	$("#dot_1").click();
+					}
+					return false;
+				});
+			},12200);
+			
+			var flag2 = false,flag3 = false,flag4 = false,flag5 = false,flag6 = false,flag7 = false,flag8 = false,flag9 = false;
+			var flag10 = false;
+			var flag11 = false;
+			var flag12 = false;
+			
 			$("#dot_1").on('click', function(e){
 				$(this).parent("div").hide();
 			    $("#screen_3 .question").not("#keyword_1").each(function(index){
-			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
-				});
+//			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+//					$(this).addClass("duration_3 delay_0_1");
+					$(this).removeClass("fall_3_other_2 delay_10_1 duration_3 fall_3_other").addClass("fall_again delay_0 duration_2");
+			    });
 				
-				$(".story_1 .screen4").addClass("InUp");
-				$(".story_1 .screen4").show();
 				$("#s_img_1").addClass("story1shIn");
 				$("#s_img_1").show();
+				$(".story_1 .screen4").addClass("InUp");
+				$(".story_1 .screen4").show();
 				$("#s_tab_1").addClass("story1shIn");
 				$("#s_tab_1").show();
+				$("#hesay_1").addClass("story1shIn");
+				$("#hesay_1").css("display","inline-block");
+				
+				$("#s_img_1,#story_1 .story").on('touchstart click',function(e){
+					if (!flag2) {
+					 	flag2 = true;
+					 	setTimeout(function(){ flag2 = false; }, 100);
+					 	$("#dot_2").click();
+					}
+					return false;
+				});
+				
 			});
 			
 			$("#dot_2").on('click', function(e){
 				$(".story_1 .screen4").removeClass("InUp").addClass("OutDown");
-				$("#s_img_1").addClass("img_story_dark");
 				$("#screen5").addClass("screen5_shIn showIn");
 				$("#text_01_2").addClass("bounceInDown text_01_2bInD");
 				$("#text_02_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#text_03_2").addClass("slipInRight text_03_2_slInRight");
+				$("#mask").addClass("mask");
 				$("#btn_1").addClass("end_btnshIn").show();
+				$("#s_tab_1").hide();
 			});
 			
 			$("#dot_3").on('click', function(e){
 				$(this).parent("div").hide();
 			    $("#story_2_screen3 .question").not("#keyword_2").each(function(index){
-			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
-				});
+//			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+					$(this).removeClass("fall_3_other_2 delay_0_1 duration_3 fall_3_other").addClass("fall_again delay_0 duration_2");
+			    });
 				
 				$(".story_2 .screen4").addClass("InUp");
 				$(".story_2 .screen4").show();
@@ -741,22 +1663,36 @@
 				$("#s_img_2").show();
 				$("#s_tab_2").addClass("story1shIn");
 				$("#s_tab_2").show();
+				$("#hesay_2").addClass("story1shIn");
+				$("#hesay_2").css("display","inline-block");
+				
+				
+				$("#s_img_2,#story_2 .story").on('touchstart click',function(e){
+					if (!flag4) {
+					 	flag4 = true;
+					 	setTimeout(function(){flag4 = false; }, 100);
+					 	$("#dot_4").click();
+					}
+					return false;
+				});
 			});
 			
 			$("#dot_4").on('click', function(e){
 				$(".story_2 .screen4").removeClass("InUp").addClass("OutDown");
-				$("#s_img_2").addClass("img_story_dark");
+				$("#mask").addClass("mask");
 				$(".story_2_screen5").addClass("duration_1 showIn delay_0");
 				$("#s2_text_01_2").addClass("bounceInDown text_01_2bInD");
 				$("#s2_text_02_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#btn_2").addClass("end_btnshIn").show();
+				$("#s_tab_2").hide();
 			});
 			
 			$("#dot_5").on('click', function(e){
 				$(this).parent("div").hide();
 			    $("#story_3_screen3 .question").not("#keyword_3").each(function(index){
-			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
-				});
+//			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+					$(this).removeClass("fall_3_other_2 delay_0_1 duration_3 fall_3_other").addClass("fall_again delay_0 duration_2");
+			    });
 				
 				$(".story_3 .screen4").addClass("InUp");
 				$(".story_3 .screen4").show();
@@ -764,22 +1700,34 @@
 				$("#s_img_3").show();
 				$("#s_tab_3").addClass("story1shIn");
 				$("#s_tab_3").show();
-			});
+				$("#hesay_3").addClass("story1shIn");
+				$("#hesay_3").css("display","inline-block");
+				
+				$("#s_img_3,#story_3 .story").on('touchstart click',function(e){
+					if (!flag6) {
+					 	flag6 = true;
+					 	setTimeout(function(){ flag6 = false; }, 100);
+					 	$("#dot_6").click();
+					}
+					return false;
+					});
+				});
 			
 			$("#dot_6").on('click', function(e){
 				$(".story_3 .screen4").removeClass("InUp").addClass("OutDown");
-				$("#s_img_3").addClass("img_story_dark");
+				$("#mask").addClass("mask");
 				$(".story_3_screen5").addClass("duration_1 showIn delay_0");
 				$("#s3_text_01_2").addClass("bounceInDown text_01_2bInD");
-//				$("#s3_text_02_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#btn_3").addClass("end_btnshIn").show();
+				$("#s_tab_3").hide();
 			});
 			
 			$("#dot_7").on('click', function(e){
 				$(this).parent("div").hide();
 			    $("#story_4_screen3 .question").not("#keyword_4").each(function(index){
-			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
-				});
+//			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+					$(this).removeClass("fall_3_other_2 delay_0_1 duration_3 fall_3_other").addClass("fall_again delay_0 duration_2");
+			    });
 				
 				$(".story_4 .screen4").addClass("InUp");
 				$(".story_4 .screen4").show();
@@ -787,22 +1735,35 @@
 				$("#s_img_4").show();
 				$("#s_tab_4").addClass("story1shIn");
 				$("#s_tab_4").show();
+				$("#hesay_4").addClass("story1shIn");
+				$("#hesay_4").css("display","inline-block");
+				
+				$("#s_img_4,#story_4 .story").on('touchstart click',function(e){
+					if (!flag8) {
+					 	flag8 = true;
+					 	setTimeout(function(){ flag8 = false; }, 100);
+					 	$("#dot_8").click();
+					}
+					return false;
+				});
 			});
 			
 			$("#dot_8").on('click', function(e){
 				$(".story_4 .screen4").removeClass("InUp").addClass("OutDown");
-				$("#s_img_4").addClass("img_story_dark");
+				$("#mask").addClass("mask");
 				$(".story_4_screen5").addClass("duration_1 showIn delay_0");
 				$("#s4_text_01_2").addClass("bounceInDown text_01_2bInD");
 				$("#s4_text_02_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#btn_4").addClass("end_btnshIn").show();
+				$("#s_tab_4").hide();
 			});
 			
 			$("#dot_9").on('click', function(e){
 				$(this).parent("div").hide();
 			    $("#story_5_screen3 .question").not("#keyword_5").each(function(index){
-			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
-				});
+//			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+					$(this).removeClass("fall_3_other_2 delay_0_1 duration_3 fall_3_other").addClass("fall_again delay_0 duration_2");
+			    });
 				
 				$(".story_5 .screen4").addClass("InUp");
 				$(".story_5 .screen4").show();
@@ -810,23 +1771,36 @@
 				$("#s_img_5").show();
 				$("#s_tab_5").addClass("story1shIn");
 				$("#s_tab_5").show();
-			});
+				$("#hesay_5").addClass("story1shIn");
+				$("#hesay_5").css("display","inline-block");
+				
+				$("#s_img_5,#story_5 .story").on('touchstart click',function(e){
+						if (!flag10) {
+						 	flag10 = true;
+						 	setTimeout(function(){ flag10 = false; }, 100);
+						 	$("#dot_10").click();
+						}
+						return false;
+					});
+				});
 			
 			$("#dot_10").on('click', function(e){
 				$(".story_5 .screen4").removeClass("InUp").addClass("OutDown");
-				$("#s_img_5").addClass("img_story_dark");
+				$("#mask").addClass("mask");
 				$(".story_5_screen5").addClass("duration_1 showIn delay_0");
 				$("#s5_text_01_2").addClass("bounceInDown text_01_2bInD");
 				$("#s5_text_02_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#s5_text_03_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#btn_5").addClass("end_btnshIn").show();
+				$("#s_tab_5").hide();
 			});
 			
 			$("#dot_11").on('click', function(e){
 				$(this).parent("div").hide();
 			    $("#story_6_screen3 .question").not("#keyword_6").each(function(index){
-			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
-				});
+//			    	$(this).removeClass("fall_3 fall_3_other fall_3_other_2 fall_3_other_3 fall_3_other_4 fall_3_other_5 fall_3_other_6 fall_3_other_7 fall_3_other_8 fall_3_other_9 fall_3_other_10 fall_3_other_11 fall_3_other_12 fall_3_other_13 group-f-3 group-f-3_other srceen3").addClass("fall_again group_f_again");
+					$(this).removeClass("fall_3_other_2 delay_0_1 duration_3 fall_3_other").addClass("fall_again delay_0 duration_2");
+			    });
 				
 				$(".story_6 .screen4").addClass("InUp");
 				$(".story_6 .screen4").show();
@@ -834,60 +1808,137 @@
 				$("#s_img_6").show();
 				$("#s_tab_6").addClass("story1shIn");
 				$("#s_tab_6").show();
-			});
+				$("#hesay_6").addClass("story1shIn");
+				$("#hesay_6").css("display","inline-block");
+				
+				$("#s_img_6,#story_6 .story").on('touchstart click',function(e){
+						if (!flag12) {
+						 	flag12 = true;
+						 	setTimeout(function(){ flag12 = false; }, 100);
+						 	$("#dot_12").click();
+						}
+						return false;
+					});
+				});
 			
 			$("#dot_12").on('click', function(e){
 				$(".story_6 .screen4").removeClass("InUp").addClass("OutDown");
-				$("#s_img_6").addClass("img_story_dark");
+				$("#mask").addClass("mask");
 				$(".story_6_screen5").addClass("duration_1 showIn delay_0");
 				$("#s6_text_01_2").addClass("bounceInDown text_01_2bInD");
 				$("#s6_text_02_2").addClass("slipInleft text_02_2_slInLeft");
 				$("#btn_6").addClass("end_btnshIn").show();
+				$("#s_tab_6").hide();
 			});
 			
 			$("#btn_1").on('click', function(e){
+				$("#mask").removeClass("mask");
 				$("#story_1").hide();
 				$("#s_img_1").hide();
 				$(this).hide();
 				$("#story_2_screen3").addClass("delay_0 screen3_shIn");
 				$(".story_2").show();
+				setTimeout(function(){
+					$("#story_2 .question_s").on('touchstart click',function(e){
+						if (!flag3) {
+						 	flag3 = true;
+						 	setTimeout(function(){ flag3 = false; }, 100);
+						 	$("#dot_3").click();
+						}
+						return false;
+		
+					});
+				},3100);
 			});
 			
 			$("#btn_2").on('click', function(e){
+				$("#mask").removeClass("mask");
 				$(".story_2").hide();
 				$("#s_img_2").hide();
 				$(this).hide();
 				$("#story_3_screen3").addClass("delay_0 screen3_shIn");
 				$(".story_3").show();
+				setTimeout(function(){
+					$("#story_3 .question_s").on('touchstart click',function(e){
+						if (!flag5) {
+						 	flag5 = true;
+						 	setTimeout(function(){ flag5 = false; }, 100);
+						 	$("#dot_5").click();
+						}
+						return false;
+					});
+				},3100);
 			});
 			
 			$("#btn_3").on('click', function(e){
+				$("#mask").removeClass("mask");
 				$(".story_3").hide();
 				$("#s_img_3").hide();
 				$(this).hide();
 				$("#story_4_screen3").addClass("delay_0 screen3_shIn");
 				$(".story_4").show();
+				setTimeout(function(){
+					$("#story_4 .question_s").on('touchstart click',function(e){
+						if (!flag7) {
+						 	flag7 = true;
+						 	setTimeout(function(){ flag7 = false; }, 100);
+						 	$("#dot_7").click();
+						}
+						return false;
+					});
+				},3100);
 			});
 			$("#btn_4").on('click', function(e){
+				$("#mask").removeClass("mask");
 				$(".story_4").hide();
 				$("#s_img_4").hide();
 				$(this).hide();
 				$("#story_5_screen3").addClass("delay_0 screen3_shIn");
 				$(".story_5").show();
+				setTimeout(function(){
+					$("#story_5 .question_s").on('touchstart click',function(e){
+						if (!flag9) {
+						 	flag9 = true;
+						 	setTimeout(function(){ flag9 = false; }, 100);
+						 	$("#dot_9").click();
+						}
+						return false;
+					});
+				},3100);
 			});
 			$("#btn_5").on('click', function(e){
+				$("#mask").removeClass("mask");
 				$(".story_5").hide();
 				$("#s_img_5").hide();
 				$(this).hide();
 				$("#story_6_screen3").addClass("delay_0 screen3_shIn");
 				$(".story_6").show();
+				setTimeout(function(){
+					$("#story_6 .question_s").on('touchstart click',function(e){
+						if (!flag11) {
+						 	flag11 = true;
+						 	setTimeout(function(){ flag11 = false; }, 100);
+						 	$("#dot_11").click();
+						}
+						return false;
+					});
+				},3100);
 			});
 			$("#btn_6").on('click', function(e){
+				$("#mask").removeClass("mask");
 				$(".story_6").hide();
 				$("#s_img_6").hide();
 				$(this).hide();
-				$(".backCover").addClass("delay_0 screen3_shIn");
-				$(".backCover").show();
+//				$(".backCover").addClass("delay_0 screen3_shIn");
+//				$(".backCover").show();
+				$(".story_7").show();			
+				$(".slogan_ctn").addClass("delay_0 screen3_shIn");
+				$(".slogan_ctn").show();
+				$(".slogan").addClass("bounceInDown text_01_2bInD");
+				$(".story_7").addClass("fadeOut_2 delay_2_2");
+				$(".story_8").show();
+				$(".backCover").addClass("delay_2_2 duration_1");
+				
 			});
 		</script>
 	</body>
